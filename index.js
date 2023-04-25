@@ -14,11 +14,12 @@ async function getPoke() {
 
 
 console.log("Hello, World!");
-getPoke();
+// Commented out to avoid the reams of JSON
+// getPoke(); 
 console.log(speak("Mooooooooooooooooooooooooooooo!!"));
-// console.log(add(2, 2));
-// console.log(subtract(9, 5));
-// console.log(divide(8, 2));
-// console.log(multiply(1, 4));
+console.log(add(2, 2));
+console.log(subtract(9, 5));
+console.log(divide(8, 2));
+console.log(multiply(1, 4));
 
 

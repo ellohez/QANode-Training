@@ -1,18 +1,11 @@
-function add(x, y) {
-    return x + y;
-};
+// Arrow function versions
+let add = (x, y) => x + y;
 
-function subtract(x, y) {
-    return x - y;
-};
+let subtract = (x, y) => x - y;
 
-function multiply(x, y) {
-    return x * y;
-}
+let multiply = (x, y) => x * y;
 
-function divide(x, y) {
-    return x / y;
-}
+let divide = (x, y) => x / y;
 
 // Export the functions to make them public
 // Like a java class (encapsulation)
