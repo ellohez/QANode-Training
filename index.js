@@ -5,17 +5,17 @@ const axios = require("axios");
 const {speak} = require('./cow.js');
 
 // const address = "https://icanhazdadjoke.com/";
-const address = "https://pokeapi.co/api/v2/"
+// const address = "https://pokeapi.co/api/v2/rotom-wash/"
+const address = "http://www.boredapi.com/api/activity/";
 
-async function getPoke() {
-    const poke = await axios.get(`${address}/rotom-wash/`).
-    then(({data}) => console.log("Poke: ", poke.data));
+async function getFromApi() {
+    const thing = await axios.get(address).
+    then(({data}) => console.log("API response: ", thing.data));
 }
-
 
 console.log("Hello, World!");
 // Commented out to avoid the reams of JSON
-// getPoke(); 
+getFromApi(); 
 console.log(speak("Mooooooooooooooooooooooooooooo!!"));
 console.log(add(2, 2));
 console.log(subtract(9, 5));
